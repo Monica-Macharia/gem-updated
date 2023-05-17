@@ -1,24 +1,29 @@
-# README
+##Fork the repository
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Clone the repository
 
-Things you may want to cover:
+##Set up the server
 
-* Ruby version
+cd repository-name
+bundle install       # Installs Ruby dependencies
 
-* System dependencies
 
-* Configuration
+rails db:create         # Creates the database
+rails db:migrate        # Runs database migrations
+rails db:seed           # Seeds the database with initial data
 
-* Database creation
+Start the Rails server
+rails server
 
-* Database initialization
 
-* How to run the test suite
+Open the React client: In a new terminal window, navigate to the client directory of the Rails-React app.
 
-* Services (job queues, cache servers, search engines, etc.)
+cd client
+Install the required dependencies using:
+yarn install
 
-* Deployment instructions
+Start the React development server
+npm start
 
-* ...
+
+Access the app in a web browser
